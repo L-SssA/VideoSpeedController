@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>popup</title>
+  <style>
+    input::-webkit-outer-spin-button,
+
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+
+    .input-number {
+      text-align: center;
+      padding: 4px 8px;
+      border-radius: 6px;
+      outline: none;
+      border: 1px solid;
+      margin: 0 4px;
+    }
+
+    body>* {
+      margin: 6px 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>PlaySpeed</h3>
+  <label class="container-input">
+    播放速度：<input type="number" id="SpeedNum" value="1" min="0.25" step="0.25" class="input-number">
+  </label>
+  <button id="setButton">设置速度</button>
+
+  <script src="js/popup.js"></script>
+</body>
+
+</html>
